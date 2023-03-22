@@ -26,6 +26,7 @@ class MyHomePage extends StatelessWidget {
   List<Widget> _items(BuildContext context) {
     return [
       _myListTile(context, AppRoutes.dioPage),
+      _myListTile(context, AppRoutes.webView),
     ];
   }
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_package_sample/routes/app_routes.dart';
 import 'package:flutter_package_sample/views/dio_coffee_page.dart';
 import 'package:flutter_package_sample/views/home_page.dart';
+import 'package:flutter_package_sample/views/webview_sample/webview_page.dart';
+import 'package:flutter_package_sample/views/webview_sample/webview_screen.dart';
 
 class AppRouter {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
@@ -10,6 +12,10 @@ class AppRouter {
         return _buildRoute(const MyHomePage());
       case AppRoutes.dioPage:
         return _buildRoute(const DioCoffeePage());
+      case AppRoutes.webView:
+        return _buildRoute(const WebViewPage());
+      case AppRoutes.webViewScreen:
+        return _buildRoute(const WebViewScreenPage());
 
       default:
         return null;
