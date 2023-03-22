@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_package_sample/components/my_app_bar.dart';
 import 'package:flutter_package_sample/routes/app_routes.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -11,6 +12,14 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       key: scaffoldKey,
+      appBar: MyAppBar.withSettingsButton(
+        'Home',
+        onSettingsPressed: () => scaffoldKey.currentState!.openEndDrawer(),
+        leading: IconButton(
+          icon: const Icon(Icons.menu),
+          onPressed: () => debugPrint('onPressed menu'),
+        ),
+      ),
       body: ListView.separated(
         itemCount: items.length,
         itemBuilder: (_, index) {

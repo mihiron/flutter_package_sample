@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_package_sample/components/my_app_bar.dart';
 import 'package:flutter_package_sample/routes/app_routes.dart';
 
 class WebViewPage extends StatelessWidget {
@@ -7,6 +8,7 @@ class WebViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const MyAppBar('WebViewPage'),
       body: Center(
         child: ElevatedButton(
           onPressed: () =>

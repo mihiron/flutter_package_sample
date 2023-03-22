@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_package_sample/components/my_app_bar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_package_sample/models/api/request/coffee.dart';
 import 'package:flutter_package_sample/repositories/api/coffee_repository.dart';
@@ -21,6 +22,7 @@ class DioCoffeePage extends ConsumerWidget {
     final asyncValue = ref.watch(listProvider);
 
     return Scaffold(
+      appBar: MyAppBar.withSettingsButton('DioCoffeePage'),
       body: Center(
         child: asyncValue.when(
           data: (data) {
