@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_package_sample/main.dart';
 import 'package:flutter_package_sample/src/components/my_alert_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -24,7 +25,7 @@ class ImagePickerService {
     // リクエスト結果がgranted(許可)でなければアラートダイアログを表示する
     if (!cameraPermission.isGranted) {
       final String? selectedText = await showDialog<String>(
-        context: context,
+        context: navigatorKey.currentContext!,
         builder: (_) {
           return const MyAlertDialog(
             title: "AlertDialog",

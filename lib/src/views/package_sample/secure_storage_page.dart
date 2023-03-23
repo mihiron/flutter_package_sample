@@ -73,7 +73,7 @@ class SecureStoragePage extends ConsumerWidget {
                     await SecureStorageService.writeStorage("key1", textValue);
 
                     // 画面表示用のプロバイダーを更新
-                    ref.refresh(textValueProvider);
+                    ref.invalidate(textValueProvider);
                     textEditingController.clear();
                   },
                   child: const Text("保存"),
@@ -106,7 +106,7 @@ class SecureStoragePage extends ConsumerWidget {
                     // SecureStorageの削除
                     await SecureStorageService.deleteStorage("key1");
                     // 画面表示用のプロバイダーを更新
-                    ref.refresh(textValueProvider);
+                    ref.invalidate(textValueProvider);
                   },
                   child: const Text("削除"),
                 ),
@@ -143,7 +143,7 @@ class SecureStoragePage extends ConsumerWidget {
                     // SecureStorageの全件削除
                     await SecureStorageService.deleteAllStorage();
                     // 画面表示用のプロバイダーを更新
-                    ref.refresh(textValueProvider);
+                    ref.invalidate(textValueProvider);
                   },
                   child: const Text("削除ALL"),
                 ),

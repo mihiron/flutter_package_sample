@@ -4,6 +4,8 @@ import 'package:flutter_package_sample/src/routes/app_router.dart';
 
 // RouteObserverのインスタンス
 final RouteObserver<PageRoute> _routeObserver = RouteObserver<PageRoute>();
+// グローバルキーの設定
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
   // ルートにProviderScopeを追加
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      key: navigatorKey,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
