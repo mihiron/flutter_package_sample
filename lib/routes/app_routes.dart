@@ -5,4 +5,5 @@ class AppRoutes {
   static const webViewScreen = '/webViewScreen';
   static const secureStoragePage = '/secureStoragePage';
   static const imageGallerySaverPage = '/imageGallerySaverPage';
+  static const cachedNetworkImagePage = '/cachedNetworkImagePage';
 }

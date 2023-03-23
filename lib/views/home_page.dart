@@ -34,6 +34,7 @@ class MyHomePage extends StatelessWidget {
 
   List<Widget> _items(BuildContext context) {
     return [
+      _myListTile(context, AppRoutes.cachedNetworkImagePage),
       _myListTile(context, AppRoutes.imageGallerySaverPage),
       _myListTile(context, AppRoutes.secureStoragePage),
       _myListTile(context, AppRoutes.dioPage),
