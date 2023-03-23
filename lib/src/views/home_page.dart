@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
-import 'package:flutter_package_sample/routes/app_routes.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/routes/app_routes.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});

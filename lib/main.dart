@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_package_sample/routes/app_router.dart';
+import 'package:flutter_package_sample/src/routes/app_router.dart';
 
 // RouteObserverのインスタンス
 final RouteObserver<PageRoute> _routeObserver = RouteObserver<PageRoute>();

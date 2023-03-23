@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
 
 class FlutterKeyboardVisibilityPage extends StatefulWidget {
   const FlutterKeyboardVisibilityPage({super.key});

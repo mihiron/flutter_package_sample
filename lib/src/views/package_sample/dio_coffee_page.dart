@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/models/api/request/coffee.dart';
+import 'package:flutter_package_sample/src/repositories/api/coffee_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_package_sample/models/api/request/coffee.dart';
-import 'package:flutter_package_sample/repositories/api/coffee_repository.dart';
 
 // Repository(APIの取得)の状態を管理する
 final coffeeRepositoryProvider = Provider((ref) => CoffeeRepository());

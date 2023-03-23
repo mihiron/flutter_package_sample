@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:flutter_package_sample/models/api/request/coffee.dart';
+import 'package:flutter_package_sample/src/models/api/request/coffee.dart';
 
 class CoffeeApiClient {
   Future<List<Coffee>?> fetchList() async {

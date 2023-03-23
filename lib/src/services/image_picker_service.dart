@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/components/my_alert_dialog.dart';
+import 'package:flutter_package_sample/src/components/my_alert_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 

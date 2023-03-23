@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
 
 class CachedNetworkImagePage extends StatelessWidget {
   CachedNetworkImagePage({super.key});

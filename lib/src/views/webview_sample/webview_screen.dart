@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebViewScreenPage extends StatelessWidget {

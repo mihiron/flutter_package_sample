@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
-import 'package:flutter_package_sample/services/secure_storage_service.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/services/secure_storage_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // 画面表示用のProviderの定義

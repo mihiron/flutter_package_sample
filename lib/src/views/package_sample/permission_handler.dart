@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/components/my_app_bar.dart';
-import 'package:flutter_package_sample/services/image_picker_service.dart';
+import 'package:flutter_package_sample/src/components/my_app_bar.dart';
+import 'package:flutter_package_sample/src/services/image_picker_service.dart';
 
 class PermissionHandlerPage extends StatelessWidget {
   const PermissionHandlerPage({super.key});

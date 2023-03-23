@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_package_sample/routes/app_routes.dart';
-import 'package:flutter_package_sample/views/cached_network_image_page.dart';
-import 'package:flutter_package_sample/views/dio_coffee_page.dart';
-import 'package:flutter_package_sample/views/flutter_keyboard_visibility_page.dart';
-import 'package:flutter_package_sample/views/home_page.dart';
-import 'package:flutter_package_sample/views/image_gallery_saver_page.dart';
-import 'package:flutter_package_sample/views/permission_handler.dart';
-import 'package:flutter_package_sample/views/secure_storage_page.dart';
-import 'package:flutter_package_sample/views/webview_sample/webview_page.dart';
-import 'package:flutter_package_sample/views/webview_sample/webview_screen.dart';
+import 'package:flutter_package_sample/src/routes/app_routes.dart';
+import 'package:flutter_package_sample/src/views/home_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/cached_network_image_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/dio_coffee_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/flutter_keyboard_visibility_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/image_gallery_saver_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/permission_handler.dart';
+import 'package:flutter_package_sample/src/views/package_sample/secure_storage_page.dart';
+import 'package:flutter_package_sample/src/views/webview_sample/webview_page.dart';
+import 'package:flutter_package_sample/src/views/webview_sample/webview_screen.dart';
 
 class AppRouter {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
