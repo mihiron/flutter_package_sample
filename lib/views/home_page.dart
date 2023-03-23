@@ -34,11 +34,12 @@ class MyHomePage extends StatelessWidget {
 
   List<Widget> _items(BuildContext context) {
     return [
-      _myListTile(context, AppRoutes.flutterKeyboardVisibilityPage),
-      _myListTile(context, AppRoutes.cachedNetworkImagePage),
-      _myListTile(context, AppRoutes.imageGallerySaverPage),
-      _myListTile(context, AppRoutes.secureStoragePage),
-      _myListTile(context, AppRoutes.dioPage),
+      _myListTile(context, AppRoutes.permissionHandler),
+      _myListTile(context, AppRoutes.flutterKeyboardVisibility),
+      _myListTile(context, AppRoutes.cachedNetworkImage),
+      _myListTile(context, AppRoutes.imageGallerySaver),
+      _myListTile(context, AppRoutes.secureStorage),
+      _myListTile(context, AppRoutes.dio),
       _myListTile(context, AppRoutes.webView),
     ];
   }

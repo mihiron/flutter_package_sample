@@ -62,9 +62,12 @@ class ImageGallerySaverPage extends ConsumerWidget {
               FloatingActionButton(
                 onPressed: () async {
                   // ImagePickerServiceのgetImageFromCamera()を使い、カメラから画像を取得
-                  final picked = await ImagePickerService.getImageFromCamera();
+                  final picked =
+                      await ImagePickerService.getImageFromCamera(context);
+                  if (picked == null) return;
+
                   // 取得した画像をプロバイダー経由で画面に反映
-                  imageStateController.state = picked!;
+                  imageStateController.state = picked;
                 },
                 heroTag: 'hiro1',
                 child: const Icon(Icons.add_a_photo),
