@@ -3,4 +3,5 @@ class AppRoutes {
   static const dioPage = '/dioPage';
   static const webView = '/webView';
   static const webViewScreen = '/webViewScreen';
+  static const secureStoragePage = '/secureStoragePage';
 }

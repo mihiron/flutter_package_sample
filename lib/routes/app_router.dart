@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_package_sample/routes/app_routes.dart';
 import 'package:flutter_package_sample/views/dio_coffee_page.dart';
 import 'package:flutter_package_sample/views/home_page.dart';
+import 'package:flutter_package_sample/views/secure_storage_page.dart';
 import 'package:flutter_package_sample/views/webview_sample/webview_page.dart';
 import 'package:flutter_package_sample/views/webview_sample/webview_screen.dart';
 
@@ -16,6 +17,8 @@ class AppRouter {
         return _buildRoute(const WebViewPage());
       case AppRoutes.webViewScreen:
         return _buildRoute(const WebViewScreenPage());
+      case AppRoutes.secureStoragePage:
+        return _buildRoute(SecureStoragePage());
 
       default:
         return null;
