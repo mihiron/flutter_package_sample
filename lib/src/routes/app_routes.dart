@@ -9,4 +9,5 @@ class AppRoutes {
   static const flutterKeyboardVisibility = '/flutterKeyboardVisibility';
   static const permissionHandler = '/permissionHandler';
   static const flutterLocalNotifications = '/flutterLocalNotifications';
+  static const adaptiveDialog = '/adaptiveDialog';
 }

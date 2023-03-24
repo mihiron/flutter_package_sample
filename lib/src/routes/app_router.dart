@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_package_sample/src/routes/app_routes.dart';
 import 'package:flutter_package_sample/src/views/home_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/adaptive_dialog.dart';
 import 'package:flutter_package_sample/src/views/package_sample/cached_network_image_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/dio_coffee_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/flutter_keyboard_visibility_page.dart';
@@ -34,6 +35,8 @@ class AppRouter {
         return _buildRoute(const PermissionHandlerPage());
       case AppRoutes.flutterLocalNotifications:
         return _buildRoute(FlutterLocalNotificationsPage());
+      case AppRoutes.adaptiveDialog:
+        return _buildRoute(const AdaptiveDialogPage());
 
       default:
         return null;
