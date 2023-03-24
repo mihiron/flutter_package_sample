@@ -8,4 +8,5 @@ class AppRoutes {
   static const cachedNetworkImage = '/cachedNetworkImage';
   static const flutterKeyboardVisibility = '/flutterKeyboardVisibility';
   static const permissionHandler = '/permissionHandler';
+  static const flutterLocalNotifications = '/flutterLocalNotifications';
 }

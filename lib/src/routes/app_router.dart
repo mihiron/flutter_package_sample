@@ -4,6 +4,7 @@ import 'package:flutter_package_sample/src/views/home_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/cached_network_image_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/dio_coffee_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/flutter_keyboard_visibility_page.dart';
+import 'package:flutter_package_sample/src/views/package_sample/flutter_localnotifications_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/image_gallery_saver_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/permission_handler.dart';
 import 'package:flutter_package_sample/src/views/package_sample/secure_storage_page.dart';
@@ -31,6 +32,8 @@ class AppRouter {
         return _buildRoute(const FlutterKeyboardVisibilityPage());
       case AppRoutes.permissionHandler:
         return _buildRoute(const PermissionHandlerPage());
+      case AppRoutes.flutterLocalNotifications:
+        return _buildRoute(FlutterLocalNotificationsPage());
 
       default:
         return null;
