@@ -17,6 +17,10 @@ class PushManager {
     // Androidの場合、trueを返却
     if (Platform.isAndroid) {
       debugPrint("isAndroid result:true");
+      _flnp
+          .resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>()
+          ?.requestPermission();
       return true;
     }
 
@@ -88,7 +92,7 @@ class PushManager {
   // ローカル通知を指定日時に表示
   Future<void> scheduleNotification() async {
     // 5秒後
-    var scheduleNotificationDateTime = DateTime(2023, 3, 24, 12, 55);
+    var scheduleNotificationDateTime = DateTime(2023, 3, 24, 14, 00);
     // var scheduleNotificationDateTime = DateTime.now().add(const Duration(seconds: 5));
     debugPrint(scheduleNotificationDateTime.toString());
 
