@@ -3,6 +3,7 @@ class AppRoutes {
   static const dio = '/dio';
   static const webView = '/webView';
   static const webViewScreen = '/webViewScreen';
+  static const inAppWebViewScreen = '/inAppWebViewScreen';
   static const secureStorage = '/secureStorage';
   static const imageGallerySaver = '/imageGallerySaver';
   static const cachedNetworkImage = '/cachedNetworkImage';

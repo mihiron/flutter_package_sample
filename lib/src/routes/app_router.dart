@@ -9,6 +9,7 @@ import 'package:flutter_package_sample/src/views/package_sample/flutter_localnot
 import 'package:flutter_package_sample/src/views/package_sample/image_gallery_saver_page.dart';
 import 'package:flutter_package_sample/src/views/package_sample/permission_handler.dart';
 import 'package:flutter_package_sample/src/views/package_sample/secure_storage_page.dart';
+import 'package:flutter_package_sample/src/views/webview_sample/flutter_in_app_web_view/in_app_web_view_screen.dart';
 import 'package:flutter_package_sample/src/views/webview_sample/webview_page.dart';
 import 'package:flutter_package_sample/src/views/webview_sample/webview_screen.dart';
 
@@ -23,6 +24,8 @@ class AppRouter {
         return _buildRoute(const WebViewPage());
       case AppRoutes.webViewScreen:
         return _buildRoute(const WebViewScreenPage());
+      case AppRoutes.inAppWebViewScreen:
+        return _buildRoute(const InAppWebViewScreenPage());
       case AppRoutes.secureStorage:
         return _buildRoute(SecureStoragePage());
       case AppRoutes.imageGallerySaver:
